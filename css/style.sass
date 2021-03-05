@@ -221,10 +221,9 @@ html
     &-content
         width: 74%
         // display: flex
-        // justify-content: space-between
+        // justify-content: start
         position: relative
         flex-direction: column
-
         &-myslider
             width: 100%
             height: 50%
@@ -250,14 +249,15 @@ html
                         margin-left: 8px
                     &:hover
                         color: #ffb500
-            .line
-                width: 450px
-                height: 5px
-                border-top: 1px solid #e2e2e24d
-                background: radial-gradient(circle, rgba(206,206,206,.7) 8%, rgba(255,251,251,.8) 76%)
-                margin: 0 auto
+        .line
+            width: 450px
+            height: 4px
+            border-top: 1px solid #e2e2e24d
+            background: radial-gradient(circle, rgba(206,206,206,.7) 8%, rgba(255,251,251,.8) 76%)
+            margin: 0 auto
+            margin-top: 15px
         &-news
-            
+            margin-top: 35px
             &-title
                 font-family: "MyriadPro"
                 display: flex
@@ -286,7 +286,7 @@ html
                 width: 30%
                 display: flex;
                 flex-direction: column
-                justify-content: start
+                justify-content: space-between
                 align-items: center
                 background: linear-gradient(180deg, #107bd210 97%, #005fcc49 100%)
                 padding: 15px
@@ -296,11 +296,10 @@ html
                 font-size: 14px
                 font-weight: 700
                 color: #0e6bcb
-                margin-top: 10px
             &__item-text
                 margin-top: 10px
             &__item-img
-                // margin-top: 20px
+                margin-bottom: 10px
                 border-radius: 50%
                 object-fit: cover
                 border: 2px solid #ffb500
@@ -326,7 +325,9 @@ html
                 align-items: center
                 border: 1px solid #d9d9d9
                 border-top: none
-                padding: 41px 0                
+                padding: 41px 0
+                // background: radial-gradient(circle, rgba(255,255,255,1) 90%, rgba(14,107,203,0.16290266106442575) 100%)
+                
                 &:nth-of-type(6)
                     border-radius: 0 0 4px 4px
                     box-shadow: 0px 4px 3px -5px rgba(34, 60, 80, 0.6)
@@ -343,11 +344,4 @@ html
                 &-price span:nth-of-type(1)
                     font-size: 16px
                     font-weight: 700
-                    
-                    
-
-
-
-            
-                
             
