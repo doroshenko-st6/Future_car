@@ -1,0 +1,353 @@
+@import fonts
+@import reset
+@import media
+
+html
+    font-family: "Tahoma"
+    font-size: 12px
+
+.container
+    width: 100%
+    max-width: 1180px
+    margin: 0 auto
+    padding-left: 20px
+    padding-right: 20px
+    
+.header
+    width: 100%
+    &-img
+        padding: 25px 0 300px 0
+        background-image: url("../img/head_layer.png")
+        background-repeat: no-repeat
+        background-position: center
+        background-size: cover
+        position: relative
+        z-index: 1
+        &__cars
+            position: absolute
+            top: 65%
+            left: 50%
+            transform: translate(-50%, -50%)
+            
+    &-grid
+        display: flex
+        justify-content: space-between
+        align-items: center
+        &__logo
+            position: relative
+            &-name
+                text-align: center
+                font-size: 47px
+                color: #fff
+                font-family: "MyriadPro"
+                font-weight: 600
+                text-transform: uppercase
+                padding: 0 7px
+                background: rgb(14,107,203)
+                background: linear-gradient(0deg, rgba(14,107,203,1) 50%, rgba(83,163,225,1) 50%)
+                border-left: 1px solid rgb(14,107,203)
+                border-right: 1px solid rgb(14,107,203)
+                line-height: 1
+            &-text
+                position: absolute
+                top: 105%
+                left: 2%
+                color: rgb(14,107,203)
+            &-dot
+                position: absolute
+                width: 40px
+                height: 40px
+                color: #fff
+                background-color: #ffbc00
+                border-radius: 50%
+                font-size: 19px
+                top: -50%
+                left: 94%
+                &:before
+                    position: absolute
+                    content: ".ru"
+                    left: 50%
+                    top: 50%
+                    transform: translate(-50%, -50%)
+                    margin-top: -3px
+        &-info
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+            position: relative
+        &-social
+            display: flex
+            justify-content: flex-end
+            margin-bottom: 10px
+            &__link
+                margin-left: 12px
+                font-size: 12px
+                padding: 5px
+                line-height: 1
+                color: #fff
+                &:nth-of-type(1)
+                    background-color: #5983a8
+                    border-radius: 3px
+                &:nth-of-type(2)
+                    background-color: #18c5ff
+                    border-radius: 3px
+                &:nth-of-type(3)
+                    background-color: #2854a8
+                    border-radius: 3px
+                    padding: 5px 8px      
+        &-pad
+            position: relative
+            background-color: #000
+            text-align: right
+            width: 190px
+            height: 70px
+            padding-left: 10px
+            opacity: .3
+            &::after
+                content: ''
+                position: absolute
+                top: 0
+                left: -12px
+                border: 12px solid #000
+                height: 100%
+                transform: skew(15deg)
+            &::before
+                position: absolute;
+                content: ""
+                height: 100%
+                width: 8px
+                top: 0px
+                left: -23px
+                background-color:  #000
+                transform: skew(15deg)
+        &-phone
+            position: absolute
+            top: 20%
+            left: 5%
+            font-family: "PTSans"
+            color: #fff
+            font-weight: 400
+            font-size: 14px
+            text-align: right
+            &__call
+                display: flex
+                justify-content: space-between
+                align-items: center
+                margin-top: 5px
+            &__number-icon
+                font-size: 16px
+            &__number495
+                margin-left: 5px
+            &__number
+                font-weight: 700
+                font-size: 22px
+
+.nav
+    width: 100%
+    margin-top: -45px
+    &-list
+        height: 45px
+        background: #0e6acc
+        background: rgb(0,94,204);
+        background: linear-gradient(0deg, rgba(0,94,204,1) 6%, rgba(0,146,222,1) 88%)
+        display: flex
+        justify-content: space-around
+        align-items: center
+        color: #fff
+        font-family: "Tahoma"
+        font-size: 12px
+        text-transform: uppercase
+        position: relative
+        z-index: 1
+        display: flex
+        &-point
+            width: 6px
+            height: 6px
+            background-color: #1076d1
+            border: 1px inset rgba(65, 150, 235, 0.75)
+            border-radius: 50%
+            z-index: -1
+        &-item
+            &__link
+                padding: 1.27em 1.6em
+                transition: .2s
+                &:hover
+                    color: #6a5219
+                    background: rgb(255,176,0)
+                    background: linear-gradient(0deg, rgba(255,176,0,1) 50%, rgba(255,202,48,1) 50%)
+                    border-radius: 3px
+    &-image
+        position: relative
+        z-index: 1
+        &__left, &__right
+            position: absolute
+        &__left
+            top: -9px
+            left: -122px
+        &__right
+            top: -6px
+            right: -122px
+
+.slick-slide:focus
+  outline: none
+.slick-dots
+    display: flex
+    justify-content: center
+    align-items: center
+    margin-top: 15px
+    line-height: 0
+.slick-dots button
+    font-size: 0
+    padding: 3px
+    border-radius: 50%
+    transition: .5s
+    background-color: #ccc;
+.slick-dots li
+    margin: 0 8px
+.slick-active button
+    transform: scale(1.3)
+    background-color: #0e6bcb
+.slick-slide img
+    width: 100%
+    border-radius: 4px
+
+.main
+    padding: 20px 
+    .rew
+        display: flex
+        justify-content: space-around
+        border-bottom: 1px solid #ddd
+        padding-bottom: 40px
+    &-content
+        width: 74%
+        // display: flex
+        // justify-content: space-between
+        position: relative
+        flex-direction: column
+
+        &-myslider
+            width: 100%
+            height: 50%
+            &__card
+                width: 100%
+                &__image
+                    display: block
+                &-info
+                    color: #fff
+                    background-color: rgba(0, 0, 0,.7)
+                    position: absolute
+                    top: 50%
+                    left: 82%
+                    width: 37%
+                    transform: translate(-50%,-50%)
+                    padding: 18px
+                    border-top: 8px solid #ffb500 
+                &-info p
+                    margin: 5px 0
+                    display: inline-block
+                &-info span
+                    .fa-arrow-right
+                        margin-left: 8px
+                    &:hover
+                        color: #ffb500
+            .line
+                width: 450px
+                height: 5px
+                border-top: 1px solid #e2e2e24d
+                background: radial-gradient(circle, rgba(206,206,206,.7) 8%, rgba(255,251,251,.8) 76%)
+                margin: 0 auto
+        &-news
+            
+            &-title
+                font-family: "MyriadPro"
+                display: flex
+                justify-content: space-between
+                align-items: center
+                width: 58%
+            &-title h1
+                color: #444444
+                font-size: 24px
+            &-title button
+                margin-top: 7px
+                font-size: 14px
+                font-weight: 400
+                &:hover
+                    color: #0e6bcb
+            &__grid
+                display: flex
+                justify-content: space-between
+                width: 100%
+                padding-top: 20px
+            &__text
+                display: flex
+                flex-direction: column
+                align-items: center
+            &__col
+                width: 30%
+                display: flex;
+                flex-direction: column
+                justify-content: start
+                align-items: center
+                background: linear-gradient(180deg, #107bd210 97%, #005fcc49 100%)
+                padding: 15px
+                border-radius: 4px
+            &__item-subtitle
+                font-family: "MyriadPro"
+                font-size: 14px
+                font-weight: 700
+                color: #0e6bcb
+                margin-top: 10px
+            &__item-text
+                margin-top: 10px
+            &__item-img
+                // margin-top: 20px
+                border-radius: 50%
+                object-fit: cover
+                border: 2px solid #ffb500
+                box-shadow: 0px 5px 10px 2px rgba(255, 218, 7, 0.2)
+                padding: 2px
+
+        &-shop
+            display: flex
+            flex-direction: column
+            width: 23%
+                background-color: #000
+            &__title
+                color: #fff
+                font-family: "Tahoma"
+                text-transform: uppercase
+                text-align: center
+                background-color: #107ad2
+                padding: 7px
+                border-radius: 4px 4px 0 0
+            &__item
+                display: flex
+                justify-content: center
+                align-items: center
+                border: 1px solid #d9d9d9
+                border-top: none
+                padding: 41px 0                
+                &:nth-of-type(6)
+                    border-radius: 0 0 4px 4px
+                    box-shadow: 0px 4px 3px -5px rgba(34, 60, 80, 0.6)
+                &-car
+                    margin-right: 20px
+                &-name
+                    color: #2957ab
+                    font-family: "PTSans"
+                    font-weight: 700
+                    font-size: 15px
+                    &:hover
+                        color:  #107ad2
+                        cursor: pointer
+                &-price span:nth-of-type(1)
+                    font-size: 16px
+                    font-weight: 700
+                    
+                    
+
+
+
+            
+                
+            
